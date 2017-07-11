@@ -19,6 +19,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="请输入内容"
+        android:inputType="text"
         />
 
     <Button

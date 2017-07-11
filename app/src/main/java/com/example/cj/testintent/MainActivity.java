@@ -15,12 +15,13 @@ import android.widget.Button;
  * Extra：表示额外的内容。用于Intent传递数据。
  *      putExtra(键值对);键是字符串类型
  *      putExtras(Bundle类型的对象);
+ * Data：数据。包含了Uri类型的唯一字段。类似于tel:// 定义了唯一性的标识前缀。
+ *      使用action和data结合可以实现跳转到系统的应用对应的界面。
  *
- * 
  * 启动一个Activity一般有两种形式，分别是显式启动和隐式启动
  * 显式启动： Intent i = new Intent(当前Activity.this,目标Activity.class);
  * 隐式启动（不指明从哪里跳转，跳转到哪里去）：Intent i = new Intent();
- * 如果要实现隐式启动，一般要使用action和data或者action和category结合
+ *      如果要实现隐式启动，一般要使用action和data或者action和category结合
  */
 public class MainActivity extends AppCompatActivity {
     private Button btn;
